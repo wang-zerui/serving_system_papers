@@ -81,3 +81,38 @@
   primaryClass  = "cs.DC",
   eprint        = "2401.09670"
 }
+
+@ARTICLE{Fu2024-jj,
+  title         = "{ServerlessLLM}: {Locality-Enhanced} Serverless Inference
+                   for Large Language Models",
+  author        = "Fu, Yao and Xue, Leyang and Huang, Yeqi and Brabete,
+                   Andrei-Octavian and Ustiugov, Dmitrii and Patel, Yuvraj and
+                   Mai, Luo",
+  abstract      = "This paper presents ServerlessLLM, a locality-enhanced
+                   serverless inference system for Large Language Models
+                   (LLMs). ServerlessLLM exploits the substantial capacity and
+                   bandwidth of storage and memory devices available on GPU
+                   servers, thereby reducing costly remote checkpoint downloads
+                   and achieving efficient checkpoint loading. ServerlessLLM
+                   achieves this through three main contributions: (i) fast LLM
+                   checkpoint loading via a novel loading-optimized checkpoint
+                   format design, coupled with an efficient multi-tier
+                   checkpoint loading system; (ii) locality-driven LLM
+                   inference with live migration, which allows ServerlessLLM to
+                   effectively achieve locality-driven server allocation while
+                   preserving the low latency of ongoing LLM inference; and
+                   (iii) locality-aware server allocation, enabling
+                   ServerlessLLM to evaluate the status of each server in a
+                   cluster and effectively schedule model startup time to
+                   capitalize on local checkpoint placement. Our comprehensive
+                   experiments, which include microbenchmarks and real-world
+                   traces, show that ServerlessLLM surpasses state-of-the-art
+                   systems by 10 - 200X in latency performance when running
+                   various LLM inference workloads.",
+  month         =  jan,
+  year          =  2024,
+  keywords      = "Serving LLM",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2401.14351"
+}
